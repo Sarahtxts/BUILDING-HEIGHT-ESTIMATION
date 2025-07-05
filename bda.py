@@ -3,7 +3,7 @@ import cv2
 # Store clicked points
 points = []
 
-# Mouse callback to collect 4 clicks: 2 for reference, 2 for building
+# 2 for reference, 2 for building
 def click_event(event, x, y, flags, param):
     global points
     if event == cv2.EVENT_LBUTTONDOWN:
@@ -34,7 +34,7 @@ def click_event(event, x, y, flags, param):
             print("\n Annotated image saved as 'annotated_building_height.png'.")
 
 # Load image
-img_path = "rit.jpg"  # Replace with your filename
+img_path = "rit.jpg"  
 img = cv2.imread(img_path)
 
 if img is None:
